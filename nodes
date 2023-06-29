@@ -1,0 +1,14 @@
+import networkx as nx
+
+# Создание графа
+G = nx.Graph()
+
+# Добавление узлов
+G.add_nodes_from([1, 2, 3])
+
+# Добавление ребер
+G.add_edges_from([(1, 2), (2, 3)])
+
+# Проверка связности графа
+is_connected = nx.is_connected(G)
+print(is_connected)
